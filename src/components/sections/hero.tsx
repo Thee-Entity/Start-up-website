@@ -4,8 +4,8 @@ import Image from "next/image"
 
 export default function HeroSection() {
   return (
-    <section className="relative bg-gray-900 text-white py-24 md:py-32 lg:py-40 overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-primary/40 to-slate-900 opacity-60"></div>
+    <section className="relative bg-[#0F172A] text-white py-24 md:py-32 lg:py-40 overflow-hidden">
+      <div className="absolute inset-0 bg-gradient-to-br from-background via-primary/30 to-background opacity-60"></div>
       <Image
         src="https://picsum.photos/1920/1080"
         alt="Abstract background"
@@ -24,10 +24,10 @@ export default function HeroSection() {
           </p>
           <div className="mt-10 flex flex-col sm:flex-row justify-center items-center gap-4">
             <Button size="lg" className="bg-gradient-to-r from-accent to-primary text-primary-foreground hover:opacity-90 transition-opacity" asChild>
-              <Link href="#contact">Start Your Journey</Link>
+              <Link href="/#contact">Start Your Journey</Link>
             </Button>
             <Button size="lg" variant="outline" className="bg-transparent text-white border-white/50 hover:bg-white/10 hover:text-white" asChild>
-              <Link href="#solutions">Explore Our Solutions</Link>
+              <Link href="/#solutions">Explore Our Solutions</Link>
             </Button>
           </div>
         </div>

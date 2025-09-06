@@ -30,20 +30,20 @@ export default function Footer() {
           <div>
             <h3 className="font-headline text-lg font-semibold">Quick Links</h3>
             <ul className="mt-4 space-y-2">
-              <li><Link href="#" className="text-muted-foreground hover:text-primary">Home</Link></li>
-              <li><Link href="#about" className="text-muted-foreground hover:text-primary">About Us</Link></li>
-              <li><Link href="#solutions" className="text-muted-foreground hover:text-primary">Solutions</Link></li>
-              <li><Link href="#industries" className="text-muted-foreground hover:text-primary">Industries</Link></li>
+              <li><Link href="/" className="text-muted-foreground hover:text-primary">Home</Link></li>
+              <li><Link href="/about" className="text-muted-foreground hover:text-primary">About Us</Link></li>
+              <li><Link href="/#solutions" className="text-muted-foreground hover:text-primary">Solutions</Link></li>
+              <li><Link href="/#industries" className="text-muted-foreground hover:text-primary">Industries</Link></li>
             </ul>
           </div>
 
           <div>
             <h3 className="font-headline text-lg font-semibold">Resources</h3>
             <ul className="mt-4 space-y-2">
-              <li><Link href="#blog" className="text-muted-foreground hover:text-primary">Blog</Link></li>
+              <li><Link href="/#blog" className="text-muted-foreground hover:text-primary">Blog</Link></li>
               <li><Link href="#" className="text-muted-foreground hover:text-primary">Case Studies</Link></li>
               <li><Link href="#" className="text-muted-foreground hover:text-primary">Whitepapers</Link></li>
-              <li><Link href="#contact" className="text-muted-foreground hover:text-primary">Contact</Link></li>
+              <li><Link href="/#contact" className="text-muted-foreground hover:text-primary">Contact</Link></li>
             </ul>
           </div>
           

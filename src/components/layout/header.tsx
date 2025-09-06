@@ -19,28 +19,34 @@ import {
 import { Logo } from "@/components/logo"
 
 const solutions = [
-  { name: "Software Development", icon: Code2 },
-  { name: "AI Solutions", icon: BrainCircuit },
-  { name: "Automation", icon: Cog },
-  { name: "Consulting", icon: Lightbulb },
+  { name: "Software Development", icon: Code2, href: "/#solutions" },
+  { name: "AI Solutions", icon: BrainCircuit, href: "/#solutions" },
+  { name: "Automation", icon: Cog, href: "/#solutions" },
+  { name: "Consulting", icon: Lightbulb, href: "/#solutions" },
 ];
 
 const industries = [
-  { name: "SMEs", icon: Briefcase },
-  { name: "Institutions", icon: Building },
-  { name: "Schools", icon: School },
-  { name: "Enterprises", icon: Factory },
+  { name: "SMEs", icon: Briefcase, href: "/#industries" },
+  { name: "Institutions", icon: Building, href: "/#industries" },
+  { name: "Schools", icon: School, href: "/#industries" },
+  { name: "Enterprises", icon: Factory, href: "/#industries" },
 ];
 
 const resources = [
-  { name: "Blog", icon: Newspaper },
-  { name: "Case Studies", icon: BookOpen },
-  { name: "Whitepapers", icon: FileText },
+  { name: "Blog", icon: Newspaper, href: "/#blog" },
+  { name: "Case Studies", icon: BookOpen, href: "#" },
+  { name: "Whitepapers", icon: FileText, href: "#" },
 ];
 
 function NavMenu() {
   return (
     <>
+      <Button variant="ghost" asChild>
+          <Link href="/">Home</Link>
+      </Button>
+      <Button variant="ghost" asChild>
+        <Link href="/about">About Us</Link>
+      </Button>
       <DropdownMenu>
         <DropdownMenuTrigger asChild>
           <Button variant="ghost" className="flex items-center gap-1">
@@ -50,7 +56,7 @@ function NavMenu() {
         <DropdownMenuContent>
           {solutions.map((item) => (
             <DropdownMenuItem key={item.name} asChild>
-              <Link href="#solutions" className="flex items-center gap-2">
+              <Link href={item.href} className="flex items-center gap-2">
                 <item.icon className="h-4 w-4 text-primary" />
                 {item.name}
               </Link>
@@ -68,7 +74,7 @@ function NavMenu() {
         <DropdownMenuContent>
           {industries.map((item) => (
             <DropdownMenuItem key={item.name} asChild>
-              <Link href="#industries" className="flex items-center gap-2">
+              <Link href={item.href} className="flex items-center gap-2">
                 <item.icon className="h-4 w-4 text-primary" />
                 {item.name}
               </Link>
@@ -86,7 +92,7 @@ function NavMenu() {
         <DropdownMenuContent>
           {resources.map((item) => (
             <DropdownMenuItem key={item.name} asChild>
-              <Link href="#blog" className="flex items-center gap-2">
+              <Link href={item.href} className="flex items-center gap-2">
                 <item.icon className="h-4 w-4 text-primary" />
                 {item.name}
               </Link>
@@ -94,13 +100,9 @@ function NavMenu() {
           ))}
         </DropdownMenuContent>
       </DropdownMenu>
-      
-      <Button variant="ghost" asChild>
-        <Link href="#about">About Us</Link>
-      </Button>
 
       <Button variant="ghost" asChild>
-        <Link href="#contact">Contact</Link>
+        <Link href="/#contact">Contact</Link>
       </Button>
     </>
   );
@@ -123,7 +125,7 @@ export default function Header() {
         
         <div className="flex items-center gap-4">
           <Button className="hidden sm:inline-flex bg-gradient-to-r from-accent to-primary text-primary-foreground hover:opacity-90 transition-opacity" asChild>
-            <Link href="#contact">Book a Consultation</Link>
+            <Link href="/#contact">Book a Consultation</Link>
           </Button>
           <Sheet open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>
             <SheetTrigger asChild>
@@ -143,15 +145,15 @@ export default function Header() {
                 </Button>
               </div>
               <nav className="mt-8 flex flex-col gap-4">
-                <Link href="#" onClick={() => setMobileMenuOpen(false)} className="text-lg">Home</Link>
-                <Link href="#about" onClick={() => setMobileMenuOpen(false)} className="text-lg">About Us</Link>
-                <Link href="#solutions" onClick={() => setMobileMenuOpen(false)} className="text-lg">Solutions</Link>
-                <Link href="#industries" onClick={() => setMobileMenuOpen(false)} className="text-lg">Industries</Link>
-                <Link href="#blog" onClick={() => setMobileMenuOpen(false)} className="text-lg">Resources</Link>
-                <Link href="#contact" onClick={() => setMobileMenuOpen(false)} className="text-lg">Contact</Link>
+                <Link href="/" onClick={() => setMobileMenuOpen(false)} className="text-lg">Home</Link>
+                <Link href="/about" onClick={() => setMobileMenuOpen(false)} className="text-lg">About Us</Link>
+                <Link href="/#solutions" onClick={() => setMobileMenuOpen(false)} className="text-lg">Solutions</Link>
+                <Link href="/#industries" onClick={() => setMobileMenuOpen(false)} className="text-lg">Industries</Link>
+                <Link href="/#blog" onClick={() => setMobileMenuOpen(false)} className="text-lg">Resources</Link>
+                <Link href="/#contact" onClick={() => setMobileMenuOpen(false)} className="text-lg">Contact</Link>
               </nav>
               <Button className="w-full mt-8 bg-gradient-to-r from-accent to-primary text-primary-foreground" asChild>
-                <Link href="#contact" onClick={() => setMobileMenuOpen(false)}>Book a Consultation</Link>
+                <Link href="/#contact" onClick={() => setMobileMenuOpen(false)}>Book a Consultation</Link>
               </Button>
             </SheetContent>
           </Sheet>

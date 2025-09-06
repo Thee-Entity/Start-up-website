@@ -28,7 +28,7 @@ export default function AboutSnapshot() {
               Thee Entity is a Kenyan-born tech startup dedicated to building unique AI-powered solutions and software that help businesses grow. Our mission is to bridge the automation gap for SMEs and institutions by offering tools that boost efficiency, cut costs, and open new opportunities.
             </p>
             <Button variant="link" asChild className="p-0 text-lg">
-              <Link href="#">
+              <Link href="/about">
                 Learn More <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </Button>
