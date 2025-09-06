@@ -25,13 +25,6 @@ const solutions = [
   { name: "Consulting", icon: Lightbulb, href: "/solutions" },
 ];
 
-const industries = [
-  { name: "SMEs", icon: Briefcase, href: "/#industries" },
-  { name: "Institutions", icon: Building, href: "/#industries" },
-  { name: "Schools", icon: School, href: "/#industries" },
-  { name: "Enterprises", icon: Factory, href: "/#industries" },
-];
-
 const resources = [
   { name: "Blog", icon: Newspaper, href: "/#blog" },
   { name: "Case Studies", icon: BookOpen, href: "#" },
@@ -67,23 +60,9 @@ function NavMenu() {
         </DropdownMenuContent>
       </DropdownMenu>
 
-      <DropdownMenu>
-        <DropdownMenuTrigger asChild>
-          <Button variant="ghost" className="flex items-center gap-1">
-            Industries <ChevronDown className="h-4 w-4" />
-          </Button>
-        </DropdownMenuTrigger>
-        <DropdownMenuContent>
-          {industries.map((item) => (
-            <DropdownMenuItem key={item.name} asChild>
-              <Link href={item.href} className="flex items-center gap-2">
-                <item.icon className="h-4 w-4 text-primary" />
-                {item.name}
-              </Link>
-            </DropdownMenuItem>
-          ))}
-        </DropdownMenuContent>
-      </DropdownMenu>
+      <Button variant="ghost" asChild>
+        <Link href="/industries">Industries</Link>
+      </Button>
 
        <DropdownMenu>
         <DropdownMenuTrigger asChild>
@@ -150,7 +129,7 @@ export default function Header() {
                 <Link href="/" onClick={() => setMobileMenuOpen(false)} className="text-lg">Home</Link>
                 <Link href="/about" onClick={() => setMobileMenuOpen(false)} className="text-lg">About Us</Link>
                 <Link href="/solutions" onClick={() => setMobileMenuOpen(false)} className="text-lg">Solutions</Link>
-                <Link href="/#industries" onClick={() => setMobileMenuOpen(false)} className="text-lg">Industries</Link>
+                <Link href="/industries" onClick={() => setMobileMenuOpen(false)} className="text-lg">Industries</Link>
                 <Link href="/#blog" onClick={() => setMobileMenuOpen(false)} className="text-lg">Resources</Link>
                 <Link href="/#contact" onClick={() => setMobileMenuOpen(false)} className="text-lg">Contact</Link>
               </nav>
