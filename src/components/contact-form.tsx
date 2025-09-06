@@ -24,6 +24,10 @@ const formSchema = z.object({
   email: z.string().email({
     message: "Please enter a valid email address.",
   }),
+  phone: z.string().optional(),
+  subject: z.string().min(5, {
+    message: "Subject must be at least 5 characters.",
+  }),
   message: z.string().min(10, {
     message: "Message must be at least 10 characters.",
   }),
@@ -37,6 +41,8 @@ export function ContactForm() {
     defaultValues: {
       name: "",
       email: "",
+      phone: "",
+      subject: "",
       message: "",
     },
   })
@@ -58,7 +64,7 @@ export function ContactForm() {
           name="name"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Name</FormLabel>
+              <FormLabel>Full Name</FormLabel>
               <FormControl>
                 <Input placeholder="Your Name" {...field} />
               </FormControl>
@@ -71,9 +77,35 @@ export function ContactForm() {
           name="email"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Email</FormLabel>
+              <FormLabel>Email Address</FormLabel>
               <FormControl>
                 <Input placeholder="your.email@example.com" {...field} />
+              </FormControl>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
+        <FormField
+          control={form.control}
+          name="phone"
+          render={({ field }) => (
+            <FormItem>
+              <FormLabel>Phone Number (Optional)</FormLabel>
+              <FormControl>
+                <Input placeholder="+254 712 345 678" {...field} />
+              </FormControl>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
+         <FormField
+          control={form.control}
+          name="subject"
+          render={({ field }) => (
+            <FormItem>
+              <FormLabel>Subject</FormLabel>
+              <FormControl>
+                <Input placeholder="What is this about?" {...field} />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -86,7 +118,7 @@ export function ContactForm() {
             <FormItem>
               <FormLabel>Message</FormLabel>
               <FormControl>
-                <Textarea placeholder="How can we help you?" {...field} rows={4} />
+                <Textarea placeholder="How can we help you?" {...field} rows={5} />
               </FormControl>
               <FormMessage />
             </FormItem>

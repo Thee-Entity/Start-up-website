@@ -83,7 +83,7 @@ function NavMenu() {
       </DropdownMenu>
 
       <Button variant="ghost" asChild>
-        <Link href="/#contact">Contact</Link>
+        <Link href="/contact">Contact</Link>
       </Button>
     </>
   );
@@ -106,7 +106,7 @@ export default function Header() {
         
         <div className="flex items-center gap-4">
           <Button className="hidden sm:inline-flex bg-gradient-to-r from-accent to-primary text-primary-foreground hover:opacity-90 transition-opacity" asChild>
-            <Link href="/#contact">Book a Consultation</Link>
+            <Link href="/contact">Book a Consultation</Link>
           </Button>
           <Sheet open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>
             <SheetTrigger asChild>
@@ -131,10 +131,10 @@ export default function Header() {
                 <Link href="/solutions" onClick={() => setMobileMenuOpen(false)} className="text-lg">Solutions</Link>
                 <Link href="/industries" onClick={() => setMobileMenuOpen(false)} className="text-lg">Industries</Link>
                 <Link href="/case-studies" onClick={() => setMobileMenuOpen(false)} className="text-lg">Case Studies</Link>
-                <Link href="/#contact" onClick={() => setMobileMenuOpen(false)} className="text-lg">Contact</Link>
+                <Link href="/contact" onClick={() => setMobileMenuOpen(false)} className="text-lg">Contact</Link>
               </nav>
               <Button className="w-full mt-8 bg-gradient-to-r from-accent to-primary text-primary-foreground" asChild>
-                <Link href="/#contact" onClick={() => setMobileMenuOpen(false)}>Book a Consultation</Link>
+                <Link href="/contact" onClick={() => setMobileMenuOpen(false)}>Book a Consultation</Link>
               </Button>
             </SheetContent>
           </Sheet>
