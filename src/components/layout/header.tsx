@@ -26,9 +26,9 @@ const solutions = [
 ];
 
 const resources = [
-  { name: "Blog", icon: Newspaper, href: "/#blog" },
+  { name: "Blog", icon: Newspaper, href: "/resources" },
   { name: "Case Studies", icon: BookOpen, href: "/case-studies" },
-  { name: "Whitepapers", icon: FileText, href: "#" },
+  { name: "Whitepapers", icon: FileText, href: "/resources#downloads" },
 ];
 
 function NavMenu() {
@@ -40,25 +40,9 @@ function NavMenu() {
       <Button variant="ghost" asChild>
         <Link href="/about">About Us</Link>
       </Button>
-      <DropdownMenu>
-        <DropdownMenuTrigger asChild>
-          <Button variant="ghost" className="flex items-center gap-1" asChild>
-            <Link href="/solutions">
-              Solutions <ChevronDown className="h-4 w-4" />
-            </Link>
-          </Button>
-        </DropdownMenuTrigger>
-        <DropdownMenuContent>
-          {solutions.map((item) => (
-            <DropdownMenuItem key={item.name} asChild>
-              <Link href={item.href} className="flex items-center gap-2">
-                <item.icon className="h-4 w-4 text-primary" />
-                {item.name}
-              </Link>
-            </DropdownMenuItem>
-          ))}
-        </DropdownMenuContent>
-      </DropdownMenu>
+      <Button variant="ghost" asChild>
+          <Link href="/solutions">Solutions</Link>
+      </Button>
 
       <Button variant="ghost" asChild>
         <Link href="/industries">Industries</Link>
@@ -130,7 +114,8 @@ export default function Header() {
                 <Link href="/about" onClick={() => setMobileMenuOpen(false)} className="text-lg">About Us</Link>
                 <Link href="/solutions" onClick={() => setMobileMenuOpen(false)} className="text-lg">Solutions</Link>
                 <Link href="/industries" onClick={() => setMobileMenuOpen(false)} className="text-lg">Industries</Link>
-                <Link href="/case-studies" onClick={() => setMobileMenuOpen(false)} className="text-lg">Case Studies</Link>
+                <Link href="/resources" onClick={() => setMobileMenuOpen(false)} className="text-lg">Resources</Link>
+                <Link href="/case-studies" onClick={() => setMobileMebookOpen(false)} className="text-lg">Case Studies</Link>
                 <Link href="/contact" onClick={() => setMobileMenuOpen(false)} className="text-lg">Contact</Link>
               </nav>
               <Button className="w-full mt-8 bg-gradient-to-r from-accent to-primary text-primary-foreground" asChild>

@@ -58,7 +58,7 @@ export default function BlogPreview() {
               </CardContent>
               <CardFooter className="p-6 pt-0">
                 <Button variant="link" asChild className="p-0">
-                  <Link href="#">
+                  <Link href="/resources">
                     Read More <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>
                 </Button>
@@ -69,7 +69,7 @@ export default function BlogPreview() {
         
         <div className="text-center mt-12">
           <Button variant="outline" asChild>
-            <Link href="#">View All Articles <ArrowRight className="ml-2 h-4 w-4" /></Link>
+            <Link href="/resources">View All Articles <ArrowRight className="ml-2 h-4 w-4" /></Link>
           </Button>
         </div>
       </div>
