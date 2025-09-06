@@ -11,14 +11,14 @@ export default function CtaBanner() {
               Ready to Take Your Business to the Next Level?
             </h2>
             <p className="mt-4 max-w-2xl mx-auto text-lg text-background/80">
-              Let’s build something futuristic together.
+              Your success story could be next. Let’s build something futuristic together.
             </p>
             <Button 
               size="lg" 
               className="mt-8 bg-background/20 text-white hover:bg-background/30 backdrop-blur-sm border border-white/20"
               asChild
             >
-              <Link href="/#contact">Book a Free Consultation</Link>
+              <Link href="/#contact">Start Your Project with Us</Link>
             </Button>
           </div>
         </div>

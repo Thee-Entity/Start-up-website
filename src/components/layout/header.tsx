@@ -27,7 +27,7 @@ const solutions = [
 
 const resources = [
   { name: "Blog", icon: Newspaper, href: "/#blog" },
-  { name: "Case Studies", icon: BookOpen, href: "#" },
+  { name: "Case Studies", icon: BookOpen, href: "/case-studies" },
   { name: "Whitepapers", icon: FileText, href: "#" },
 ];
 
@@ -130,7 +130,7 @@ export default function Header() {
                 <Link href="/about" onClick={() => setMobileMenuOpen(false)} className="text-lg">About Us</Link>
                 <Link href="/solutions" onClick={() => setMobileMenuOpen(false)} className="text-lg">Solutions</Link>
                 <Link href="/industries" onClick={() => setMobileMenuOpen(false)} className="text-lg">Industries</Link>
-                <Link href="/#blog" onClick={() => setMobileMenuOpen(false)} className="text-lg">Resources</Link>
+                <Link href="/case-studies" onClick={() => setMobileMenuOpen(false)} className="text-lg">Case Studies</Link>
                 <Link href="/#contact" onClick={() => setMobileMenuOpen(false)} className="text-lg">Contact</Link>
               </nav>
               <Button className="w-full mt-8 bg-gradient-to-r from-accent to-primary text-primary-foreground" asChild>
