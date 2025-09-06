@@ -92,7 +92,7 @@ export function ContactForm() {
             <FormItem>
               <FormLabel>Phone Number (Optional)</FormLabel>
               <FormControl>
-                <Input placeholder="+254 712 345 678" {...field} />
+                <Input placeholder="+254708889016" {...field} />
               </FormControl>
               <FormMessage />
             </FormItem>

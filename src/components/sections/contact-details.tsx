@@ -13,8 +13,8 @@ const contactMethods = [
     {
         icon: Phone,
         title: "Phone",
-        content: "+254 08889016",
-        href: "tel:+25408889016",
+        content: "+254708889016",
+        href: "tel:+254708889016",
     },
     {
         icon: MapPin,

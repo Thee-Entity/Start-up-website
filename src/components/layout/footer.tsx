@@ -51,7 +51,7 @@ export default function Footer() {
             <h3 className="font-headline text-lg font-semibold">Contact Info</h3>
             <ul className="mt-4 space-y-2 text-muted-foreground">
               <li className="flex items-center">info@theeentity.com</li>
-              <li className="flex items-center">+254 XXX XXX XXX</li>
+              <li className="flex items-center">+254708889016</li>
               <li className="flex items-center">Nairobi, Kenya</li>
             </ul>
           </div>
