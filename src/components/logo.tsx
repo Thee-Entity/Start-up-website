@@ -1,8 +1,6 @@
-import Link from "next/link";
-
 export function Logo() {
   return (
-    <Link href="/" className="flex items-center gap-2">
+    <div className="flex items-center gap-2">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24"
@@ -20,6 +18,6 @@ export function Logo() {
       <span className="font-headline text-2xl font-bold bg-gradient-to-r from-primary to-accent gradient-text">
         Thee Entity
       </span>
-    </Link>
+    </div>
   );
 }
