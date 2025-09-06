@@ -19,10 +19,10 @@ import {
 import { Logo } from "@/components/logo"
 
 const solutions = [
-  { name: "Software Development", icon: Code2, href: "/#solutions" },
-  { name: "AI Solutions", icon: BrainCircuit, href: "/#solutions" },
-  { name: "Automation", icon: Cog, href: "/#solutions" },
-  { name: "Consulting", icon: Lightbulb, href: "/#solutions" },
+  { name: "Software Development", icon: Code2, href: "/solutions" },
+  { name: "AI Solutions", icon: BrainCircuit, href: "/solutions" },
+  { name: "Automation", icon: Cog, href: "/solutions" },
+  { name: "Consulting", icon: Lightbulb, href: "/solutions" },
 ];
 
 const industries = [
@@ -49,8 +49,10 @@ function NavMenu() {
       </Button>
       <DropdownMenu>
         <DropdownMenuTrigger asChild>
-          <Button variant="ghost" className="flex items-center gap-1">
-            Solutions <ChevronDown className="h-4 w-4" />
+          <Button variant="ghost" className="flex items-center gap-1" asChild>
+            <Link href="/solutions">
+              Solutions <ChevronDown className="h-4 w-4" />
+            </Link>
           </Button>
         </DropdownMenuTrigger>
         <DropdownMenuContent>
@@ -147,7 +149,7 @@ export default function Header() {
               <nav className="mt-8 flex flex-col gap-4">
                 <Link href="/" onClick={() => setMobileMenuOpen(false)} className="text-lg">Home</Link>
                 <Link href="/about" onClick={() => setMobileMenuOpen(false)} className="text-lg">About Us</Link>
-                <Link href="/#solutions" onClick={() => setMobileMenuOpen(false)} className="text-lg">Solutions</Link>
+                <Link href="/solutions" onClick={() => setMobileMenuOpen(false)} className="text-lg">Solutions</Link>
                 <Link href="/#industries" onClick={() => setMobileMenuOpen(false)} className="text-lg">Industries</Link>
                 <Link href="/#blog" onClick={() => setMobileMenuOpen(false)} className="text-lg">Resources</Link>
                 <Link href="/#contact" onClick={() => setMobileMenuOpen(false)} className="text-lg">Contact</Link>
