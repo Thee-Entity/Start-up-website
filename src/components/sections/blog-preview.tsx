@@ -4,29 +4,47 @@ import { ArrowRight } from "lucide-react"
 
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
+import { supabase } from "@/supabase-client"
 
-const blogPosts = [
-  {
-    title: "The Future of AI in Small Business",
-    summary: "Discover how AI is revolutionizing operations for SMEs and what you can do to stay ahead.",
-    imageUrl: "https://picsum.photos/600/400?random=1",
-    aiHint: "AI business",
-  },
-  {
-    title: "Automating Your Workflow: A Beginner's Guide",
-    summary: "Learn the first steps to identifying and automating repetitive tasks in your business.",
-    imageUrl: "https://picsum.photos/600/400?random=2",
-    aiHint: "automation workflow",
-  },
-  {
-    title: "Why Custom Software is a Game-Changer",
-    summary: "Off-the-shelf solutions have their limits. Here’s why tailored software provides a superior ROI.",
-    imageUrl: "https://picsum.photos/600/400?random=3",
-    aiHint: "custom software",
-  },
-]
+// The component is now async to fetch data
+export default async function BlogPreview() {
+  
+  // Fetch the 3 latest posts from the 'posts' table
+  const { data: blogPosts, error } = await supabase
+    .from('posts')
+    .select('*')
+    .order('created_at', { ascending: false })
+    .limit(3);
 
-export default function BlogPreview() {
+  if (error) {
+    console.error('Error fetching blog posts:', error);
+    // You can return a message or a fallback UI here
+    return (
+       <section id="blog" className="py-20 lg:py-32 bg-secondary/30">
+        <div className="container mx-auto px-4">
+           <div className="text-center">
+             <h2 className="font-headline text-3xl md:text-4xl font-bold">Error Loading Posts</h2>
+             <p className="mt-4 text-muted-foreground">Could not fetch the latest insights at this moment.</p>
+           </div>
+        </div>
+      </section>
+    )
+  }
+
+  // If there are no posts, you can show a message
+  if (!blogPosts || blogPosts.length === 0) {
+    return (
+      <section id="blog" className="py-20 lg:py-32 bg-secondary/30">
+        <div className="container mx-auto px-4">
+           <div className="text-center">
+             <h2 className="font-headline text-3xl md:text-4xl font-bold">Insights & Resources</h2>
+             <p className="mt-4 text-muted-foreground">No articles published yet. Check back soon!</p>
+           </div>
+        </div>
+      </section>
+    );
+  }
+
   return (
     <section id="blog" className="py-20 lg:py-32 bg-secondary/30">
       <div className="container mx-auto px-4">
@@ -40,15 +58,15 @@ export default function BlogPreview() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {blogPosts.map((post, index) => (
-            <Card key={index} className="flex flex-col overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 ease-in-out shadow-lg hover:shadow-2xl">
+          {blogPosts.map((post) => (
+            <Card key={post.id} className="flex flex-col overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 ease-in-out shadow-lg hover:shadow-2xl">
               <CardHeader className="p-0">
                 <Image 
-                  src={post.imageUrl} 
+                  src={post.image_url || "https://picsum.photos/600/400?random=1"} 
                   alt={post.title} 
                   width={600} 
                   height={400} 
-                  data-ai-hint={post.aiHint}
+                  data-ai-hint={post.ai_hint || "abstract"}
                   className="w-full h-48 object-cover" 
                 />
               </CardHeader>
