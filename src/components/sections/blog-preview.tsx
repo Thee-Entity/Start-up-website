@@ -13,7 +13,7 @@ export default async function BlogPreview() {
   const { data: blogPosts, error } = await supabase
     .from('posts')
     .select('*')
-    .order('created_at', { ascending: false })
+    .order('published_at', { ascending: false })
     .limit(3);
 
   if (error) {
