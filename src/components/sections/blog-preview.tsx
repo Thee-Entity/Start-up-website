@@ -18,21 +18,10 @@ export default async function BlogPreview() {
 
   if (error) {
     console.error('Error fetching blog posts:', error);
-    // You can return a message or a fallback UI here
-    return (
-       <section id="blog" className="py-20 lg:py-32 bg-secondary/30">
-        <div className="container mx-auto px-4">
-           <div className="text-center">
-             <h2 className="font-headline text-3xl md:text-4xl font-bold">Error Loading Posts</h2>
-             <p className="mt-4 text-muted-foreground">Could not fetch the latest insights at this moment.</p>
-           </div>
-        </div>
-      </section>
-    )
   }
 
-  // If there are no posts, you can show a message
-  if (!blogPosts || blogPosts.length === 0) {
+  // If there are no posts or there was an error, show a fallback UI.
+  if (error || !blogPosts || blogPosts.length === 0) {
     return (
       <section id="blog" className="py-20 lg:py-32 bg-secondary/30">
         <div className="container mx-auto px-4">
