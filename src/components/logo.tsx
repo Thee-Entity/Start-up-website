@@ -6,9 +6,9 @@ export function Logo() {
       <Image 
         src="https://nowqwttrqtklrxgjgxid.supabase.co/storage/v1/object/public/folder/photos/The%20Entity%20Icon.png" 
         alt="Thee Entity Icon"
-        width={32}
-        height={32}
-        className="h-8 w-8"
+        width={40}
+        height={40}
+        className="h-10 w-10"
       />
       <span className="font-headline text-2xl font-bold bg-gradient-to-r from-primary to-accent gradient-text">
         Thee Entity
