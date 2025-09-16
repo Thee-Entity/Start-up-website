@@ -9,16 +9,14 @@ export default function AboutSnapshot() {
     <section id="about" className="py-20 lg:py-32">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          <div className="relative h-80 md:h-full w-full rounded-lg overflow-hidden shadow-xl">
+          <div className="relative h-80 md:h-full w-full rounded-lg overflow-hidden flex items-center justify-center bg-secondary/20 p-8">
              <Image 
-                src="https://picsum.photos/800/900" 
-                alt="Team working with futuristic UI"
-                width={800}
-                height={900}
-                data-ai-hint="team holographic UI"
-                className="object-cover w-full h-full"
+                src="https://nowqwttrqtklrxgjgxid.supabase.co/storage/v1/object/public/folder/photos/Thee%20Entity%20Logo.png" 
+                alt="Thee Entity Company Logo"
+                width={400}
+                height={400}
+                className="object-contain w-full h-full"
              />
-             <div className="absolute inset-0 bg-gradient-to-t from-primary/30 to-transparent"></div>
           </div>
           <div className="space-y-6">
             <h2 className="font-headline text-3xl md:text-4xl font-bold">
