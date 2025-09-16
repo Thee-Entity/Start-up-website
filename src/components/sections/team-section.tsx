@@ -17,7 +17,7 @@ const founders = [
     aiHint: "male founder tech"
   },
   {
-    name: "Fatime Machira Hashim",
+    name: "Fatime Hashim Machira",
     role: "Co-Founder",
     philosophy: "Designing the future by building technology that grows with businesses.",
     imageUrl: "https://nowqwttrqtklrxgjgxid.supabase.co/storage/v1/object/public/folder/photos/Fatime.jpg",

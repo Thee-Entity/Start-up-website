@@ -19,7 +19,7 @@ const founders = [
     aiHint: "male founder tech"
   },
   {
-    name: "Fatime Machira Hashim",
+    name: "Fatime Hashim Machira",
     role: "Co-Founder | Backend Engineer & The Idealist",
     profileText: "As the backend architect of Thee Entity, Fatime ensures that our solutions are robust, scalable, and future-proof. Known as the ‘idealist’ of the team, she constantly pushes boundaries, bringing fresh ideas and futuristic thinking to every project. Her vision is to create systems that don’t just work, but evolve with the businesses that use them.",
     quote: "I believe in building technology that grows with businesses. We are not just solving problems — we are designing the future.",
