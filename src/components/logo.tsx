@@ -4,7 +4,7 @@ export function Logo() {
   return (
     <div className="flex items-center gap-2">
       <Image 
-        src="https://nowqwttrqtklrxgjgxid.supabase.co/storage/v1/object/public/folder/photos/Thee%20Entity%20Logo.png" 
+        src="https://nowqwttrqtklrxgjgxid.supabase.co/storage/v1/object/public/folder/photos/The%20Entity%20Icon.png" 
         alt="Thee Entity Icon"
         width={32}
         height={32}
