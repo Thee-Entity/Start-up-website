@@ -13,12 +13,12 @@ export default function WhoWeAre() {
           </div>
           <div className="order-1 md:order-2">
             <Image 
-              src="https://picsum.photos/600/500"
-              alt="Futuristic team workspace"
+              src="https://nowqwttrqtklrxgjgxid.supabase.co/storage/v1/object/public/folder/photos/Thee%20Entity%20Logo.png"
+              alt="Thee Entity Logo"
               width={600}
               height={500}
-              data-ai-hint="futuristic workspace"
-              className="rounded-lg shadow-xl"
+              data-ai-hint="company logo"
+              className="rounded-lg shadow-xl object-contain"
             />
           </div>
         </div>

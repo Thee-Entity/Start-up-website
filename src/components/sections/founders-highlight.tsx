@@ -7,24 +7,24 @@ const founders = [
     role: "Founder & CEO",
     profileText: "Collins is the driving force and leader of Thee Entity. With a strong background in mobile development and DevOps, he brings both technical expertise and visionary leadership to the team. As the founder, he believes in creating practical, scalable solutions that bridge the gap between technology and real business needs. Collins is passionate about empowering small and medium enterprises with tools that make them globally competitive.",
     quote: "I believe that innovation should be accessible to everyone, not just large enterprises. Our mission at Thee Entity is to level the playing field.",
-    imageUrl: "https://picsum.photos/400/400?random=1",
+    imageUrl: "https://nowqwttrqtklrxgjgxid.supabase.co/storage/v1/object/public/folder/photos/Collins.jpeg",
     aiHint: "male founder"
   },
   {
-    name: "Kiare",
+    name: "Brian Kareithi",
     role: "Co-Founder | Cybersecurity Specialist & Marketing Lead",
-    profileText: "Kiare combines his expertise in cybersecurity with a strategic marketing mindset, ensuring that Thee Entity’s solutions are not only secure but also market-ready. His deep understanding of digital threats helps us build systems that are both safe and resilient. As a communicator, he bridges the gap between our technology and the businesses we serve, helping organizations understand how AI and automation can transform their operations.",
+    profileText: "Brian combines his expertise in cybersecurity with a strategic marketing mindset, ensuring that Thee Entity’s solutions are not only secure but also market-ready. His deep understanding of digital threats helps us build systems that are both safe and resilient. As a communicator, he bridges the gap between our technology and the businesses we serve, helping organizations understand how AI and automation can transform their operations.",
     quote: "In a digital-first world, trust is everything. My goal is to make Thee Entity a brand that businesses can rely on for both security and growth.",
-    imageUrl: "https://picsum.photos/400/400?random=2",
+    imageUrl: "https://nowqwttrqtklrxgjgxid.supabase.co/storage/v1/object/public/folder/photos/kareithi.jpg",
     aiHint: "male founder tech"
   },
   {
-    name: "Pachema",
+    name: "Fatime Machira Hashim",
     role: "Co-Founder | Backend Engineer & The Idealist",
-    profileText: "As the backend architect of Thee Entity, Pachema ensures that our solutions are robust, scalable, and future-proof. Known as the ‘idealist’ of the team, he constantly pushes boundaries, bringing fresh ideas and futuristic thinking to every project. His vision is to create systems that don’t just work, but evolve with the businesses that use them.",
+    profileText: "As the backend architect of Thee Entity, Fatime ensures that our solutions are robust, scalable, and future-proof. Known as the ‘idealist’ of the team, she constantly pushes boundaries, bringing fresh ideas and futuristic thinking to every project. Her vision is to create systems that don’t just work, but evolve with the businesses that use them.",
     quote: "I believe in building technology that grows with businesses. We are not just solving problems — we are designing the future.",
-    imageUrl: "https://picsum.photos/400/400?random=3",
-    aiHint: "male engineer"
+    imageUrl: "https://nowqwttrqtklrxgjgxid.supabase.co/storage/v1/object/public/folder/photos/Fatime.jpg",
+    aiHint: "female engineer"
   }
 ];
 
@@ -71,7 +71,7 @@ export default function FoundersHighlight() {
 
         <div className="text-center mt-16 max-w-3xl mx-auto">
           <p className="text-lg text-muted-foreground">
-            Together, Collins, Kiare, and Pachema form the backbone of Thee Entity. Their diverse skills, shared vision, and relentless drive position the company as more than just a startup — it’s a movement to redefine how businesses in Kenya and beyond embrace technology.
+            Together, Collins, Brian, and Fatime form the backbone of Thee Entity. Their diverse skills, shared vision, and relentless drive position the company as more than just a startup — it’s a movement to redefine how businesses in Kenya and beyond embrace technology.
           </p>
         </div>
       </div>

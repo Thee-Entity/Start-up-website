@@ -6,22 +6,22 @@ const founders = [
     name: "Collins Lagat",
     role: "Founder & CEO",
     philosophy: "Building tech that works for everyone, not just big enterprises.",
-    imageUrl: "https://picsum.photos/400/400?random=1",
+    imageUrl: "https://nowqwttrqtklrxgjgxid.supabase.co/storage/v1/object/public/folder/photos/Collins.jpeg",
     aiHint: "male founder"
   },
   {
-    name: "Kiare",
+    name: "Brian Kareithi",
     role: "Co-Founder",
     philosophy: "Ensuring trust and security in a digital-first world.",
-    imageUrl: "https://picsum.photos/400/400?random=2",
+    imageUrl: "https://nowqwttrqtklrxgjgxid.supabase.co/storage/v1/object/public/folder/photos/kareithi.jpg",
     aiHint: "male founder tech"
   },
   {
-    name: "Pachema",
+    name: "Fatime Machira Hashim",
     role: "Co-Founder",
     philosophy: "Designing the future by building technology that grows with businesses.",
-    imageUrl: "https://picsum.photos/400/400?random=3",
-    aiHint: "male engineer"
+    imageUrl: "https://nowqwttrqtklrxgjgxid.supabase.co/storage/v1/object/public/folder/photos/Fatime.jpg",
+    aiHint: "female engineer"
   }
 ];
 
@@ -45,7 +45,7 @@ export default function TeamSection() {
                   width={400}
                   height={400}
                   data-ai-hint={founder.aiHint}
-                  className="rounded-t-lg"
+                  className="rounded-t-lg object-cover w-full h-[400px]"
                 />
               </CardHeader>
               <CardContent className="p-6">
