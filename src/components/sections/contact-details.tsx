@@ -7,8 +7,8 @@ const contactMethods = [
     {
         icon: Mail,
         title: "Email",
-        content: "info@theeentity.com",
-        href: "mailto:info@theeentity.com",
+        content: "theeentity.co@gmail.com",
+        href: "mailto:theeentity.co@gmail.com",
     },
     {
         icon: Phone,

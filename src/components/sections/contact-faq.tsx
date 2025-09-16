@@ -8,7 +8,7 @@ import {
 const faqs = [
     {
         question: "How can I book a consultation?",
-        answer: "You can book a free consultation by clicking on any 'Book a Consultation' button on our website or by sending us an email at info@theeentity.com. We'll get back to you to schedule a time that works for you."
+        answer: "You can book a free consultation by clicking on any 'Book a Consultation' button on our website or by sending us an email at theeentity.co@gmail.com. We'll get back to you to schedule a time that works for you."
     },
     {
         question: "Do you only work with Kenyan businesses?",

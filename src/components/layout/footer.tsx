@@ -50,7 +50,7 @@ export default function Footer() {
           <div>
             <h3 className="font-headline text-lg font-semibold">Contact Info</h3>
             <ul className="mt-4 space-y-2 text-muted-foreground">
-              <li className="flex items-center">info@theeentity.com</li>
+              <li className="flex items-center">theeentity.co@gmail.com</li>
               <li className="flex items-center">+254708889016</li>
               <li className="flex items-center">Nairobi, Kenya</li>
             </ul>
