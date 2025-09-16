@@ -6,7 +6,7 @@ const founders = [
     name: "Collins Lagat",
     role: "Founder & CEO",
     philosophy: "Building tech that works for everyone, not just big enterprises.",
-    imageUrl: "https://nowqwttrqtklrxgjgxid.supabase.co/storage/v1/object/public/folder/photos/collins%201.jpg",
+    imageUrl: "https://nowqwttrqtklrxgjgxid.supabase.co/storage/v1/object/public/folder/photos/Collins.jpeg",
     aiHint: "male founder"
   },
   {
