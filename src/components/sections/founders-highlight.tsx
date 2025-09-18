@@ -31,7 +31,7 @@ const founders = [
     role: "Marketing & Social Media Manager",
     profileText: "Zeituna leads the charge in telling Thee Entity's story to the world. As the manager of marketing and all social media platforms, she crafts compelling narratives that connect with our audience and showcase the transformative power of our solutions. Her strategic approach ensures that our message reaches the right people, building a strong community around our brand.",
     quote: "Great technology deserves a great story. My mission is to share how Thee Entity is changing the game, one business at a time.",
-    imageUrl: "https://nowqwttrqtklrxgjgxid.supabase.co/storage/v1/object/public/folder/photos/zeituna.jpg",
+    imageUrl: "https://nowqwttrqtklrxgjgxid.supabase.co/storage/v1/object/public/folder/photos/Zeituna.png",
     aiHint: "female marketer"
   }
 ];
@@ -79,7 +79,7 @@ export default function FoundersHighlight() {
 
         <div className="text-center mt-16 max-w-3xl mx-auto">
           <p className="text-lg text-muted-foreground">
-            Together, Collins, Brian, Fatime and Zeituna form the backbone of Thee Entity. Their diverse skills, shared vision, and relentless drive position the company as more than just a startup — it’s a movement to redefine how businesses in Kenya and beyond embrace technology.
+            Together, Collins, Brian, and Fatime form the backbone of Thee Entity, driving its vision and technical excellence. Supported by creative talents like Zeituna, who spearheads our marketing, the team is more than just a startup — it’s a movement to redefine how businesses in Kenya and beyond embrace technology.
           </p>
         </div>
       </div>

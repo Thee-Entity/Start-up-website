@@ -27,7 +27,7 @@ const founders = [
     name: "Zeituna Kurr",
     role: "Marketing & Social Media Manager",
     philosophy: "Telling great stories about great technology.",
-    imageUrl: "https://nowqwttrqtklrxgjgxid.supabase.co/storage/v1/object/public/folder/photos/zeituna.jpg",
+    imageUrl: "https://nowqwttrqtklrxgjgxid.supabase.co/storage/v1/object/public/folder/photos/Zeituna.png",
     aiHint: "female marketer"
   }
 ];
