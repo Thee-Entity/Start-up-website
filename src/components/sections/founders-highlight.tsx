@@ -31,7 +31,7 @@ const founders = [
     role: "Marketing & Social Media Manager",
     profileText: "Zeituna leads the charge in telling Thee Entity's story to the world. As the manager of marketing and all social media platforms, she crafts compelling narratives that connect with our audience and showcase the transformative power of our solutions. Her strategic approach ensures that our message reaches the right people, building a strong community around our brand.",
     quote: "Great technology deserves a great story. My mission is to share how Thee Entity is changing the game, one business at a time.",
-    imageUrl: "https://nowqwttrqtklrxgjgxid.supabase.co/storage/v1/object/public/folder/photos/Zeituna.png",
+    imageUrl: "https://nowqwttrqtklrxgjgxid.supabase.co/storage/v1/object/public/folder/photos/Zeituna.jpg",
     aiHint: "female marketer"
   }
 ];
