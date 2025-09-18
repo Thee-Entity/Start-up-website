@@ -5,15 +5,15 @@ const founders = [
   {
     name: "Collins Kipkirui Lagat",
     role: "Co-founder & CEO",
-    profileText: "Collins is the driving force and leader of Thee Entity. With a strong background in mobile development and DevOps, he brings both technical expertise and visionary leadership to the team. As the founder, he believes in creating practical, scalable solutions that bridge the gap between technology and real business needs. Collins is passionate about empowering small and medium enterprises with tools that make them globally competitive.",
+    profileText: "Collins is the driving force and leader of Thee Entity. A visionary idealist with a strong background in backend development and DevOps, he brings both technical expertise and strategic leadership to the team. As a co-founder, he is passionate about creating practical, scalable solutions that bridge the gap between technology and real business needs, empowering enterprises to become globally competitive.",
     quote: "I believe that innovation should be accessible to everyone, not just large enterprises. Our mission at Thee Entity is to level the playing field.",
     imageUrl: "https://nowqwttrqtklrxgjgxid.supabase.co/storage/v1/object/public/folder/photos/collins%201.jpg",
     aiHint: "male founder"
   },
   {
     name: "Brian Kareithi",
-    role: "Co-Founder | Cybersecurity Specialist",
-    profileText: "Brian combines his expertise in cybersecurity with a strategic mindset, ensuring that Thee Entity’s solutions are not only secure but also market-ready. His deep understanding of digital threats helps us build systems that are both safe and resilient. As a communicator, he bridges the gap between our technology and the businesses we serve, helping organizations understand how AI and automation can transform their operations.",
+    role: "Co-Founder | Backend Engineer & Cybersecurity Specialist",
+    profileText: "Brian combines his expertise in cybersecurity and backend engineering with a strategic mindset, ensuring that Thee Entity’s solutions are not only secure but also market-ready. His deep understanding of digital threats helps build systems that are both safe and resilient. As a communicator, he bridges the gap between our technology and the businesses we serve, helping organizations understand how AI and automation can transform their operations.",
     quote: "In a digital-first world, trust is everything. My goal is to make Thee Entity a brand that businesses can rely on for both security and growth.",
     imageUrl: "https://nowqwttrqtklrxgjgxid.supabase.co/storage/v1/object/public/folder/photos/kareithi.jpg",
     aiHint: "male founder tech"
@@ -79,7 +79,7 @@ export default function FoundersHighlight() {
 
         <div className="text-center mt-16 max-w-3xl mx-auto">
           <p className="text-lg text-muted-foreground">
-            Together, Collins, Brian, and Fatime form the backbone of Thee Entity, driving its vision and technical excellence. Supported by creative talents like Zeituna, who spearheads our marketing, the team is more than just a startup — it’s a movement to redefine how businesses in Kenya and beyond embrace technology.
+            Their diverse skills, shared vision, and relentless drive position the company as more than just a startup — it’s a movement to redefine how businesses in Kenya and beyond embrace technology.
           </p>
         </div>
       </div>
