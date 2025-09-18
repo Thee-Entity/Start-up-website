@@ -11,17 +11,24 @@ const founders = [
   },
   {
     name: "Brian Kareithi",
-    role: "Co-Founder",
+    role: "Co-Founder | Cybersecurity Specialist",
     philosophy: "Ensuring trust and security in a digital-first world.",
     imageUrl: "https://nowqwttrqtklrxgjgxid.supabase.co/storage/v1/object/public/folder/photos/kareithi.jpg",
     aiHint: "male founder tech"
   },
   {
     name: "Fatime Hashim Machira",
-    role: "Co-Founder",
-    philosophy: "Designing the future by building technology that grows with businesses.",
+    role: "Co-Founder | Frontend Developer",
+    philosophy: "Designing beautiful, secure, and user-friendly digital experiences.",
     imageUrl: "https://nowqwttrqtklrxgjgxid.supabase.co/storage/v1/object/public/folder/photos/Fatime.jpg",
     aiHint: "female engineer"
+  },
+  {
+    name: "Zeituna Kurr",
+    role: "Marketing & Social Media Manager",
+    philosophy: "Telling great stories about great technology.",
+    imageUrl: "https://nowqwttrqtklrxgjgxid.supabase.co/storage/v1/object/public/folder/photos/zeituna.jpg",
+    aiHint: "female marketer"
   }
 ];
 
@@ -35,7 +42,7 @@ export default function TeamSection() {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
           {founders.map((founder) => (
             <Card key={founder.name} className="text-center border-border/50 transform transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl">
               <CardHeader className="p-0">

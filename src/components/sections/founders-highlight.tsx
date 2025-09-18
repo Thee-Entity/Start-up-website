@@ -12,19 +12,27 @@ const founders = [
   },
   {
     name: "Brian Kareithi",
-    role: "Co-Founder | Cybersecurity Specialist & Marketing Lead",
-    profileText: "Brian combines his expertise in cybersecurity with a strategic marketing mindset, ensuring that Thee Entity’s solutions are not only secure but also market-ready. His deep understanding of digital threats helps us build systems that are both safe and resilient. As a communicator, he bridges the gap between our technology and the businesses we serve, helping organizations understand how AI and automation can transform their operations.",
+    role: "Co-Founder | Cybersecurity Specialist",
+    profileText: "Brian combines his expertise in cybersecurity with a strategic mindset, ensuring that Thee Entity’s solutions are not only secure but also market-ready. His deep understanding of digital threats helps us build systems that are both safe and resilient. As a communicator, he bridges the gap between our technology and the businesses we serve, helping organizations understand how AI and automation can transform their operations.",
     quote: "In a digital-first world, trust is everything. My goal is to make Thee Entity a brand that businesses can rely on for both security and growth.",
     imageUrl: "https://nowqwttrqtklrxgjgxid.supabase.co/storage/v1/object/public/folder/photos/kareithi.jpg",
     aiHint: "male founder tech"
   },
   {
     name: "Fatime Hashim Machira",
-    role: "Co-Founder | Backend Engineer & The Idealist",
-    profileText: "As the backend architect of Thee Entity, Fatime ensures that our solutions are robust, scalable, and future-proof. Known as the ‘idealist’ of the team, she constantly pushes boundaries, bringing fresh ideas and futuristic thinking to every project. Her vision is to create systems that don’t just work, but evolve with the businesses that use them.",
-    quote: "I believe in building technology that grows with businesses. We are not just solving problems — we are designing the future.",
+    role: "Co-Founder | Frontend Developer, UI/UX Designer & Cybersecurity Enthusiast",
+    profileText: "As a frontend developer and UI/UX designer, Fatime is the creative force behind Thee Entity's user interfaces, ensuring they are not only beautiful but also intuitive and user-friendly. With her added passion for cybersecurity, she helps architect systems that are both engaging and secure. Her vision is to create digital experiences that don't just work, but delight and protect the users who depend on them.",
+    quote: "I believe in building technology that is both beautiful and secure. We are not just solving problems — we are designing trustworthy digital experiences.",
     imageUrl: "https://nowqwttrqtklrxgjgxid.supabase.co/storage/v1/object/public/folder/photos/Fatime.jpg",
     aiHint: "female engineer"
+  },
+  {
+    name: "Zeituna Kurr",
+    role: "Marketing & Social Media Manager",
+    profileText: "Zeituna leads the charge in telling Thee Entity's story to the world. As the manager of marketing and all social media platforms, she crafts compelling narratives that connect with our audience and showcase the transformative power of our solutions. Her strategic approach ensures that our message reaches the right people, building a strong community around our brand.",
+    quote: "Great technology deserves a great story. My mission is to share how Thee Entity is changing the game, one business at a time.",
+    imageUrl: "https://nowqwttrqtklrxgjgxid.supabase.co/storage/v1/object/public/folder/photos/zeituna.jpg",
+    aiHint: "female marketer"
   }
 ];
 
@@ -71,7 +79,7 @@ export default function FoundersHighlight() {
 
         <div className="text-center mt-16 max-w-3xl mx-auto">
           <p className="text-lg text-muted-foreground">
-            Together, Collins, Brian, and Fatime form the backbone of Thee Entity. Their diverse skills, shared vision, and relentless drive position the company as more than just a startup — it’s a movement to redefine how businesses in Kenya and beyond embrace technology.
+            Together, Collins, Brian, Fatime and Zeituna form the backbone of Thee Entity. Their diverse skills, shared vision, and relentless drive position the company as more than just a startup — it’s a movement to redefine how businesses in Kenya and beyond embrace technology.
           </p>
         </div>
       </div>
