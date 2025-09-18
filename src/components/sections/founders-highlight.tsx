@@ -7,7 +7,7 @@ const founders = [
     role: "Co-founder & CEO",
     profileText: "Collins is the driving force and leader of Thee Entity. A visionary idealist with a strong background in backend development and DevOps, he brings both technical expertise and strategic leadership to the team. As a co-founder, he is passionate about creating practical, scalable solutions that bridge the gap between technology and real business needs, empowering enterprises to become globally competitive.",
     quote: "I believe that innovation should be accessible to everyone, not just large enterprises. Our mission at Thee Entity is to level the playing field.",
-    imageUrl: "https://nowqwttrqtklrxgjgxid.supabase.co/storage/v1/object/public/folder/photos/collins%201.jpg",
+    imageUrl: "https://nowqwttrqtklrxgjgxid.supabase.co/storage/v1/object/public/folder/photos/Collins.jpeg",
     aiHint: "male founder"
   },
   {
