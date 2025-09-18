@@ -6,6 +6,9 @@ import { Toaster } from '@/components/ui/toaster';
 export const metadata: Metadata = {
   title: 'Thee Entity',
   description: 'Empowering Businesses with Intelligent Automation & Next-Gen Tech Solutions.',
+  icons: {
+    icon: 'https://nowqwttrqtklrxgjgxid.supabase.co/storage/v1/object/public/folder/photos/The%20Entity%20Icon.png',
+  },
 };
 
 export default function RootLayout({
