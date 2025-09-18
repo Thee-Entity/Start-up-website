@@ -4,9 +4,9 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 const founders = [
   {
     name: "Collins Lagat",
-    role: "Founder & CEO",
+    role: "Co-founder & CEO",
     philosophy: "Building tech that works for everyone, not just big enterprises.",
-    imageUrl: "https://nowqwttrqtklrxgjgxid.supabase.co/storage/v1/object/public/folder/photos/Collins.jpeg",
+    imageUrl: "https://nowqwttrqtklrxgjgxid.supabase.co/storage/v1/object/public/folder/photos/collins%201.jpg",
     aiHint: "male founder"
   },
   {

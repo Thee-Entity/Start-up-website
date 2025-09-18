@@ -4,10 +4,10 @@ import { Card, CardContent } from "@/components/ui/card";
 const founders = [
   {
     name: "Collins Kipkirui Lagat",
-    role: "Founder & CEO",
+    role: "Co-founder & CEO",
     profileText: "Collins is the driving force and leader of Thee Entity. With a strong background in mobile development and DevOps, he brings both technical expertise and visionary leadership to the team. As the founder, he believes in creating practical, scalable solutions that bridge the gap between technology and real business needs. Collins is passionate about empowering small and medium enterprises with tools that make them globally competitive.",
     quote: "I believe that innovation should be accessible to everyone, not just large enterprises. Our mission at Thee Entity is to level the playing field.",
-    imageUrl: "https://nowqwttrqtklrxgjgxid.supabase.co/storage/v1/object/public/folder/photos/Collins.jpeg",
+    imageUrl: "https://nowqwttrqtklrxgjgxid.supabase.co/storage/v1/object/public/folder/photos/collins%201.jpg",
     aiHint: "male founder"
   },
   {
