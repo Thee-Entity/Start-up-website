@@ -27,7 +27,7 @@ const founders = [
     aiHint: "female engineer"
   },
   {
-    name: "Zeituna Kurr",
+    name: "Zeituna Hussein Kura",
     role: "Marketing & Social Media Manager",
     profileText: "Zeituna leads the charge in telling Thee Entity's story to the world. As the manager of marketing and all social media platforms, she crafts compelling narratives that connect with our audience and showcase the transformative power of our solutions. Her strategic approach ensures that our message reaches the right people, building a strong community around our brand.",
     quote: "Great technology deserves a great story. My mission is to share how Thee Entity is changing the game, one business at a time.",

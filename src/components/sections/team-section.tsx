@@ -24,7 +24,7 @@ const founders = [
     aiHint: "female engineer"
   },
   {
-    name: "Zeituna Kurr",
+    name: "Zeituna Hussein Kura",
     role: "Marketing & Social Media Manager",
     philosophy: "Telling great stories about great technology.",
     imageUrl: "https://nowqwttrqtklrxgjgxid.supabase.co/storage/v1/object/public/folder/photos/Zeituna%20Kurr.jpg",
