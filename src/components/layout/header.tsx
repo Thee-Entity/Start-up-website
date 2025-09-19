@@ -115,7 +115,7 @@ export default function Header() {
                 <Link href="/solutions" onClick={() => setMobileMenuOpen(false)} className="text-lg">Solutions</Link>
                 <Link href="/industries" onClick={() => setMobileMenuOpen(false)} className="text-lg">Industries</Link>
                 <Link href="/resources" onClick={() => setMobileMenuOpen(false)} className="text-lg">Resources</Link>
-                <Link href="/case-studies" onClick={() => setMobileMebookOpen(false)} className="text-lg">Case Studies</Link>
+                <Link href="/case-studies" onClick={() => setMobileMenuOpen(false)} className="text-lg">Case Studies</Link>
                 <Link href="/contact" onClick={() => setMobileMenuOpen(false)} className="text-lg">Contact</Link>
               </nav>
               <Button className="w-full mt-8 bg-gradient-to-r from-accent to-primary text-primary-foreground" asChild>
